@@ -1,4 +1,15 @@
 .github
 .libs
 autom4te.cache
+build
+config.h*
+config.nice
+config.status
+configure*
+libtool
+modules/beast.so
 Makefile*
+run-tests.php
+beast.la
+*.lo
+*.log
