@@ -1,0 +1,4 @@
+.github
+.libs
+autom4te.cache
+Makefile*
