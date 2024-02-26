@@ -77,13 +77,19 @@ src_path = ""
 ; destination path
 dst_path = ""
 
+; exclude folders, separated by comma, .e.g. "storage,vendor"
+exclude_folders = ""
+
+; extra files, separated by comma, .e.g. "artisan"
+extra_files = ""
+
 ; expire time
 expire = ""
 
 ; encrypt type (selection: DES, AES, BASE64)
 encrypt_type = "DES"
 ```
-`src_path` 是要加密项目的路径，`dst_path` 是保存加密后项目的路径，`expire` 是设置项目可使用的时间 (`expire` 的格式是：`YYYY-mm-dd HH:ii:ss`)。`encrypt_type`是加密的方式，选择项有：DES、AES、BASE64。
+`src_path` 是要加密项目的路径，`dst_path` 是保存加密后项目的路径，`expire` 是设置项目可使用的时间 (`expire` 的格式是：`YYYY-mm-dd HH:ii:ss`)。`encrypt_type`是加密的方式，选择项有：DES、AES、BASE64, `exclude_folders` 是要过滤的文件夹，使用英文逗号分隔，`extra_files` 是要加密的额外文件，使用英文逗号分隔，需要对未使用'.php'结尾的php文件进行加密时设置。
 修改完 `configure.ini` 文件后就可以使用命令 `php encode_files.php` 开始加密项目。
 
 **加密方案2**
